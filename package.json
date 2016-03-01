@@ -1,0 +1,30 @@
+{
+  "name": "react-proxy-es2015-loader",
+  "version": "1.0.0",
+  "description": "Like `react-proxy-loader`, but with ES2015 in mind`",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frostney/react-proxy-es2015-loader.git"
+  },
+  "keywords": [
+    "react",
+    "proxy",
+    "es6",
+    "es2015",
+    "webpack",
+    "loader"
+  ],
+  "author": "Johannes Stein",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frostney/react-proxy-es2015-loader/issues"
+  },
+  "homepage": "https://github.com/frostney/react-proxy-es2015-loader#readme",
+  "dependencies": {
+    "loader-utils": "^0.2.12"
+  }
+}
