@@ -10,7 +10,9 @@ module.exports.pitch = function(remainingRequest) {
     import React, { Component } from 'react';
 
     class ProxyComponent extends Component {
-      constructor() {
+      constructor(props) {
+				super(props);
+
         this.state = {
           component: null
         };
