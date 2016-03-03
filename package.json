@@ -1,6 +1,6 @@
 {
   "name": "react-proxy-es2015-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Like `react-proxy-loader`, but with ES2015 in mind`",
   "main": "index.js",
   "scripts": {
