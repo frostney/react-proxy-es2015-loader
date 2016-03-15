@@ -6,35 +6,13 @@ module.exports.pitch = function(remainingRequest) {
 	var query = loaderUtils.parseQuery(this.query);
 	var moduleRequest = "!!" + remainingRequest;
 
-  return `
-    import React, { Component } from 'react';
+	//var ProxyComponent = fs.readFileSync('./lib/ProxyComponent.js');
+	//console.log(ProxyComponent);
 
-    class ProxyComponent extends Component {
-      constructor(props) {
-				super(props);
+	//ProxyComponent = ProxyComponent.replace(/moduleRequest/, loaderUtils.stringifyRequest(this, moduleRequest));
+	//ProxyComponent = ProxyComponent.replace(/queryName/, queryName);
 
-        this.state = {
-          component: null
-        };
-      }
+	//console.log(ProxyComponent);
 
-      componentDidMount() {
-        require.ensure([], () => {
-            this.setState({
-              component: require(${loaderUtils.stringifyRequest(this, moduleRequest)}),
-            });
-					}${(query.name ? ', ' + JSON.stringify(query.name) : '')});
-      }
-
-      render() {
-        if (this.state.component === null) {
-          return null;
-        }
-
-        return React.cloneElement(this.state.component, this.props);
-      }
-    }
-
-    export default ProxyComponent;
-  `;
+	return '';
 };
